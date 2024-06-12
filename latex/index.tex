@@ -1,0 +1,8 @@
+\chapter{My Personal Index Page}
+\label{index}\index{My Personal Index Page@{My Personal Index Page}}
+\doxysection{Introduction}\label{index_intro_sec}
+This code takes a user input through a serial terminal and is able to spin a set of motors, individually, by clarifying which motor to select, and changing the PWM signal to the motor. This is done by using a class to change a motor\textquotesingle{}s compare value, therefore changing the duty cycle of the PWM signal\doxysection{Usage}\label{index_install_sec}
+\doxysubsection{Hardware}\label{index_Hardware}
+The board used was an STM32\+L476\+RG board with pins used according to .ioc file\doxysubsection{Files}\label{index_Files}
+Along with \doxyref{main.\+c}{p.}{main_8c} and main.\+h, motor driver files (motordriver.\+c and motordriver.\+h) were used with a psuedo-\/class structure to house the code for setting timer channel compare values to change PWM duty output to motors.\doxysubsection{Software}\label{index_Additional}
+A serial terminal also needs to be used. I used Realterm I2C, but Pu\+TTyis another option. ASCII needs to be used on the terminal and the input commands need to be structured as m!\$\$, with the ! being 1 or 2 to select the motor and the \$\$ being a hex value from 0x00 to 0x\+FF to specify a signed hex value from -\/128 to 127. This gives the maximum range of the motor speeds allowed in both directions of rotation. Any other input format will result in an error. 

@@ -1,0 +1,50 @@
+\doxysection{C\+:/\+Users/mitch/\+STM32\+Cube\+IDE/workspace\+\_\+1.15.0/\+ME507\+\_\+\+Lab\+\_\+1/\+Core/\+Src/motor\+\_\+driver.c File Reference}
+\label{motor__driver_8c}\index{C:/Users/mitch/STM32CubeIDE/workspace\_1.15.0/ME507\_Lab\_1/Core/Src/motor\_driver.c@{C:/Users/mitch/STM32CubeIDE/workspace\_1.15.0/ME507\_Lab\_1/Core/Src/motor\_driver.c}}
+{\ttfamily \#include "{}motor\+\_\+driver.\+h"{}}\newline
+{\ttfamily \#include "{}string.\+h"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include "{}stm32l4xx\+\_\+hal.\+h"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ set\+\_\+duty} (motor\+\_\+t $\ast$p\+\_\+mot, int32\+\_\+t \textbf{ duty}, int8\+\_\+t \textbf{ flag})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ duty}
+\item 
+int \textbf{ flag}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\label{motor__driver_8c_a3f6976b3167127924c863413bc4758f8} 
+\index{motor\_driver.c@{motor\_driver.c}!set\_duty@{set\_duty}}
+\index{set\_duty@{set\_duty}!motor\_driver.c@{motor\_driver.c}}
+\doxysubsubsection{set\_duty()}
+{\footnotesize\ttfamily void set\+\_\+duty (\begin{DoxyParamCaption}\item[{motor\+\_\+t $\ast$}]{p\+\_\+mot,  }\item[{int32\+\_\+t}]{duty,  }\item[{int8\+\_\+t}]{flag }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em duty} & This variable sets the compare value for a channel to change the PWM duty cycle \\
+\hline
+{\em flag} & This variable sets if the input hex value from the serial terminal is a signed negative value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\label{motor__driver_8c_ada1cd06e33cfd221862684d3c7a1fa9f} 
+\index{motor\_driver.c@{motor\_driver.c}!duty@{duty}}
+\index{duty@{duty}!motor\_driver.c@{motor\_driver.c}}
+\doxysubsubsection{duty}
+{\footnotesize\ttfamily int duty}
+
+\label{motor__driver_8c_adf916204820072417ed73a32de1cefcf} 
+\index{motor\_driver.c@{motor\_driver.c}!flag@{flag}}
+\index{flag@{flag}!motor\_driver.c@{motor\_driver.c}}
+\doxysubsubsection{flag}
+{\footnotesize\ttfamily int flag}
+
